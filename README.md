@@ -36,4 +36,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For more information, visit our [website]() or reach out to us at [contact@geospaitial.example.com](mailto:geospatialclub@vit.ac.in).
+For more information, visit our [website](https://rohit29032005.github.io/geo-spaitial_demo/) or reach out to us at [contact@geospaitial.example.com](mailto:geospatialclub@vit.ac.in).
