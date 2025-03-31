@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial Club VIT - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Geospatial Club Logo">
+                <h1>Geospatial Club VIT</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Exploring the World Through GIS</h2>
+                <p>Welcome to the Geospatial Club at VIT, where we explore the fascinating world of Geographic Information Systems and spatial data analysis.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="section-header">
+                <h2>What is GIS?</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>Geographic Information Systems (GIS) is a framework for gathering, managing, and analyzing data. Rooted in the science of geography, GIS integrates many types of data. It analyzes spatial location and organizes layers of information into visualizations using maps and 3D scenes.</p>
+                    <p>At the Geospatial Club, we explore GIS applications in environmental science, urban planning, disaster management, and more.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="images/gis-illustration.png" alt="GIS Illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Our Club</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="links-container">
+                <div class="link-card">
+                    <i class="fas fa-users"></i>
+                    <h3>About Us</h3>
+                    <p>Learn about our mission, vision, and the team behind the Geospatial Club.</p>
+                    <a href="about.html" class="btn-small">View More</a>
+                </div>
+                <div class="link-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Events</h3>
+                    <p>Discover our upcoming workshops, hackathons, and guest lectures.</p>
+                    <a href="events.html" class="btn-small">View More</a>
+                </div>
+                <div class="link-card">
+                    <i class="fas fa-blog"></i>
+                    <h3>Blog</h3>
+                    <p>Read articles, tutorials, and project showcases from our members.</p>
+                    <a href="blog.html" class="btn-small">View More</a>
+                </div>
+                <div class="link-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Members</h3>
+                    <p>Meet the passionate individuals who make up our geospatial community.</p>
+                    <a href="members.html" class="btn-small">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus-map">
+        <div class="container">
+            <div class="section-header">
+                <h2>VIT Campus Map</h2>
+                <div class="underline"></div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="events-preview">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Apr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>GIS Workshop: Introduction to QGIS</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Tech Tower, Room 301</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 2:00 PM - 5:00 PM</p>
+                        <a href="events.html" class="btn-small">Register</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Apr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Guest Lecture: Remote Sensing Applications</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Anna Auditorium</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 3:30 PM - 5:00 PM</p>
+                        <a href="events.html" class="btn-small">Register</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">29</span>
+                        <span class="month">Apr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>GeoHackathon 2023</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Technology Center</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</p>
+                        <a href="events.html" class="btn-small">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="events.html" class="btn">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-blogs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Blog Posts</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="blog-preview">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog1.jpg" alt="Blog Post Image">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding Spatial Analysis Techniques</h3>
+                        <p class="blog-meta">By Priya Sharma | April 2, 2023</p>
+                        <p class="blog-excerpt">Learn about the fundamental techniques used in spatial analysis and how they can be applied to solve real-world problems...</p>
+                        <a href="blog.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog2.jpg" alt="Blog Post Image">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Creating Your First Web Map with Leaflet.js</h3>
+                        <p class="blog-meta">By Rahul Patel | March 25, 2023</p>
+                        <p class="blog-excerpt">A step-by-step tutorial on how to create interactive web maps using the popular JavaScript library Leaflet.js...</p>
+                        <a href="blog.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog3.jpg" alt="Blog Post Image">
+                    </div>
+                    <div class="blog-content">
+                        <h3>GIS Applications in Urban Planning</h3>
+                        <p class="blog-meta">By Aditya Kumar | March 18, 2023</p>
+                        <p class="blog-excerpt">Discover how GIS is revolutionizing urban planning and helping cities become more sustainable and efficient...</p>
+                        <a href="blog.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="blog.html" class="btn">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Geospatial Club Logo">
+                    <h3>Geospatial Club VIT</h3>
+                    <p>Exploring the world through GIS</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> geospatialclub@vit.ac.in</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tech Tower, VIT University, Vellore</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Geospatial Club VIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

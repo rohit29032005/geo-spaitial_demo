@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial Club VIT - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Geospatial Club Logo">
+                <h1>Geospatial Club VIT</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Blog
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-filters">
+                <div class="blog-search">
+                    <input type="text" id="blog-search" placeholder="Search articles...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="blog-filter-options">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="tutorials">Tutorials</option>
+                        <option value="case-studies">Case Studies</option>
+                        <option value="technology">Technology</option>
+                        <option value="events">Events</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="blog-grid" id="blog-grid">
+                <div class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="images/blog1.jpg" alt="Understanding Spatial Analysis Techniques">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding Spatial Analysis Techniques</h3>
+                        <p class="blog-meta">By Priya Sharma | April 2, 2023</p>
+                        <p class="blog-excerpt">Learn about the fundamental techniques used in spatial analysis and how they can be applied to solve real-world problems...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="images/blog2.jpg" alt="Creating Your First Web Map with Leaflet.js">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Creating Your First Web Map with Leaflet.js</h3>
+                        <p class="blog-meta">By Rahul Patel | March 25, 2023</p>
+                        <p class="blog-excerpt">A step-by-step tutorial on how to create interactive web maps using the popular JavaScript library Leaflet.js...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="case-studies">
+                    <div class="blog-image">
+                        <img src="images/blog3.jpg" alt="GIS Applications in Urban Planning">
+                    </div>
+                    <div class="blog-content">
+                        <h3>GIS Applications in Urban Planning</h3>
+                        <p class="blog-meta">By Aditya Kumar | March 18, 2023</p>
+                        <p class="blog-excerpt">Discover how GIS is revolutionizing urban planning and helping cities become more sustainable and efficient...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="technology">
+                    <div class="blog-image">
+                        <img src="images/blog4.jpg" alt="The Future of Remote Sensing Technology">
+                    </div>
+                    <div class="blog-content">
+                        <h3>The Future of Remote Sensing Technology</h3>
+                        <p class="blog-meta">By Neha Singh | March 10, 2023</p>
+                        <p class="blog-excerpt">Explore the latest advancements in remote sensing technology and how they are changing the way we collect and analyze spatial data...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="case-studies">
+                    <div class="blog-image">
+                        <img src="images/blog5.jpg" alt="Using GIS for Disaster Management">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Using GIS for Disaster Management</h3>
+                        <p class="blog-meta">By Vikram Joshi | March 5, 2023</p>
+                        <p class="blog-excerpt">Learn how GIS tools and technologies are being used to prepare for, respond to, and recover from natural disasters...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="tutorials">
+                    <div class="blog-image">
+                        <img src="images/blog6.jpg" alt="Introduction to QGIS">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Introduction to QGIS: A Beginner's Guide</h3>
+                        <p class="blog-meta">By Ananya Singh | February 28, 2023</p>
+                        <p class="blog-excerpt">Get started with QGIS, a powerful open-source GIS software. This guide covers installation, interface navigation, and basic operations...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="events">
+                    <div class="blog-image">
+                        <img src="images/blog7.jpg" alt="Highlights from GeoHackathon 2022">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Highlights from GeoHackathon 2022</h3>
+                        <p class="blog-meta">By Rohan Verma | February 20, 2023</p>
+                        <p class="blog-excerpt">Recap of our annual GeoHackathon event, featuring innovative projects, winning teams, and key takeaways...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="technology">
+                    <div class="blog-image">
+                        <img src="images/blog8.jpg" alt="Exploring Open Source GIS Tools">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Exploring Open Source GIS Tools</h3>
+                        <p class="blog-meta">By Meera Patel | February 15, 2023</p>
+                        <p class="blog-excerpt">A comprehensive overview of popular open-source GIS tools and how they compare to proprietary solutions...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-category="case-studies">
+                    <div class="blog-image">
+                        <img src="images/blog9.jpg" alt="GIS in Agriculture">
+                    </div>
+                    <div class="blog-content">
+                        <h3>GIS in Agriculture: Precision Farming</h3>
+                        <p class="blog-meta">By Arjun Kumar | February 8, 2023</p>
+                        <p class="blog-excerpt">How farmers are using GIS and remote sensing to optimize crop yields, reduce waste, and practice sustainable agriculture...</p>
+                        <a href="blog-post.html" class="btn-small">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-results" id="blog-no-results" style="display: none;">
+                <p>No articles found matching your search criteria.</p>
+            </div>
+            
+            <div class="blog-pagination">
+                <a href="#" class="pagination-btn prev"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="pagination-btn active">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn">3</a>
+                <a href="#" class="pagination-btn next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Geospatial Club Logo">
+                    <h3>Geospatial Club VIT</h3>
+                    <p>Exploring the world through GIS</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> geospatialclub@vit.ac.in</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tech Tower, VIT University, Vellore</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Geospatial Club VIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Blog Search and Filter
+        const blogSearch = document.getElementById('blog-search');
+        const categoryFilter = document.getElementById('category-filter');
+        const blogCards = document.querySelectorAll('.blog-card');
+        const blogNoResults = document.getElementById('blog-no-results');
+        
+        function filterBlogs() {
+            const searchTerm = blogSearch.value.toLowerCase();
+            const categoryValue = categoryFilter.value;
+            let visibleCount = 0;
+            
+            blogCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const excerpt = card.querySelector('.blog-excerpt').textContent.toLowerCase();
+                const category = card.getAttribute('data-category');
+                
+                const matchesSearch = title.includes(searchTerm) || excerpt.includes(searchTerm);
+                const matchesCategory = categoryValue === 'all' || category === categoryValue;
+                
+                if (matchesSearch && matchesCategory) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            blogNoResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+        
+        if (blogSearch) {
+            blogSearch.addEventListener('input', filterBlogs);
+        }
+        
+        if (categoryFilter) {
+            categoryFilter.addEventListener('change', filterBlogs);
+        }
+        
+        // Pagination
+        const paginationBtns = document.querySelectorAll('.pagination-btn');
+        
+        paginationBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active class from all buttons
+                paginationBtns.forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                if (!btn.classList.contains('prev') && !btn.classList.contains('next')) {
+                    btn.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

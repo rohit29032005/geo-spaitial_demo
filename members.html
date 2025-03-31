@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial Club VIT - Members</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Geospatial Club Logo">
+                <h1>Geospatial Club VIT</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="members.html" class="active">Members</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h2>Our Members</h2>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Members
+            </div>
+        </div>
+    </section>
+
+    <section class="members-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Team</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="members-filter">
+                <div class="search-box">
+                    <input type="text" id="member-search" placeholder="Search members...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-options">
+                    <label for="role-filter">Filter by Role:</label>
+                    <select id="role-filter">
+                        <option value="all">All Roles</option>
+                        <option value="core-team">Core Team</option>
+                        <option value="technical">Technical Team</option>
+                        <option value="content">Content Team</option>
+                        <option value="events">Events Team</option>
+                        <option value="outreach">Outreach Team</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="members-container" id="members-grid">
+                <!-- Core Team Members -->
+                <div class="member-card" data-role="core-team">
+                    <div class="member-image">
+                        <img src="images/team1.jpg" alt="Aditya Patel">
+                    </div>
+                    <div class="member-info">
+                        <h3>Aditya Patel</h3>
+                        <p class="member-role">President</p>
+                        <p class="member-dept">B.Tech Civil Engineering</p>
+                        <p class="member-interests">Interests: Urban Planning, Remote Sensing</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card" data-role="core-team">
+                    <div class="member-image">
+                        <img src="images/team2.jpg" alt="Sneha Reddy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sneha Reddy</h3>
+                        <p class="member-role">Vice President</p>
+                        <p class="member-dept">B.Tech Computer Science</p>
+                        <p class="member-interests">Interests: Spatial Data Analysis, Web GIS</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card" data-role="core-team">
+                    <div class="member-image">
+                        <img src="images/team3.jpg" alt="Rahul Sharma">
+                    </div>
+                    <div class="member-info">
+                        <h3>Rahul Sharma</h3>
+                        <p class="member-role">Technical Head</p>
+                        <p class="member-dept">B.Tech Information Technology</p>
+                        <p class="member-interests">Interests: GIS Development, Spatial Databases</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technical Team Members -->
+                <div class="member-card" data-role="technical">
+                    <div class="member-image">
+                        <img src="images/member1.jpg" alt="Karthik Menon">
+                    </div>
+                    <div class="member-info">
+                        <h3>Karthik Menon</h3>
+                        <p class="member-role">Technical Team</p>
+                        <p class="member-dept">B.Tech Computer Science</p>
+                        <p class="member-interests">Interests: Web Mapping, Python GIS</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card" data-role="technical">
+                    <div class="member-image">
+                        <img src="images/member2.jpg" alt="Neha Singh">
+                    </div>
+                    <div class="member-info">
+                        <h3>Neha Singh</h3>
+                        <p class="member-role">Technical Team</p>
+                        <p class="member-dept">B.Tech Information Technology</p>
+                        <p class="member-interests">Interests: Spatial Databases, QGIS</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content Team Members -->
+                <div class="member-card" data-role="content">
+                    <div class="member-image">
+                        <img src="images/member3.jpg" alt="Vikram Joshi">
+                    </div>
+                    <div class="member-info">
+                        <h3>Vikram Joshi</h3>
+                        <p class="member-role">Content Lead</p>
+                        <p class="member-dept">B.Tech Civil Engineering</p>
+                        <p class="member-interests">Interests: GIS Visualization, Cartography</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card" data-role="content">
+                    <div class="member-image">
+                        <img src="images/member4.jpg" alt="Priya Desai">
+                    </div>
+                    <div class="member-info">
+                        <h3>Priya Desai</h3>
+                        <p class="member-role">Content Team</p>
+                        <p class="member-dept">B.Tech Environmental Engineering</p>
+                        <p class="member-interests">Interests: Environmental GIS, Remote Sensing</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Events Team Members -->
+                <div class="member-card" data-role="events">
+                    <div class="member-image">
+                        <img src="images/member5.jpg" alt="Ananya Singh">
+                    </div>
+                    <div class="member-info">
+                        <h3>Ananya Singh</h3>
+                        <p class="member-role">Events Coordinator</p>
+                        <p class="member-dept">B.Tech Electronics</p>
+                        <p class="member-interests">Interests: GPS Technology, IoT with GIS</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card" data-role="events">
+                    <div class="member-image">
+                        <img src="images/member6.jpg" alt="Arjun Kumar">
+                    </div>
+                    <div class="member-info">
+                        <h3>Arjun Kumar</h3>
+                        <p class="member-role">Events Team</p>
+                        <p class="member-dept">B.Tech Mechanical Engineering</p>
+                        <p class="member-interests">Interests: 3D GIS, CAD Integration</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Outreach Team Members -->
+                <div class="member-card" data-role="outreach">
+                    <div class="member-image">
+                        <img src="images/member7.jpg" alt="Meera Patel">
+                    </div>
+                    <div class="member-info">
+                        <h3>Meera Patel</h3>
+                        <p class="member-role">Outreach Coordinator</p>
+                        <p class="member-dept">B.Tech Environmental Engineering</p>
+                        <p class="member-interests">Interests: Community GIS, Public Participation</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="member-card" data-role="outreach">
+                    <div class="member-image">
+                        <img src="images/member8.jpg" alt="Rohan Verma">
+                    </div>
+                    <div class="member-info">
+                        <h3>Rohan Verma</h3>
+                        <p class="member-role">Outreach Team</p>
+                        <p class="member-dept">B.Tech Computer Science</p>
+                        <p class="member-interests">Interests: Open Source GIS, Community Building</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-results" id="no-results" style="display: none;">
+                <p>No members found matching your search criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Geospatial Club Logo">
+                    <h3>Geospatial Club VIT</h3>
+                    <p>Exploring the world through GIS</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> geospatialclub@vit.ac.in</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tech Tower, VIT University, Vellore</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Geospatial Club VIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
