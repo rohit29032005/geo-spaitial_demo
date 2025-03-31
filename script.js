@@ -215,3 +215,52 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add scroll event listener
     window.addEventListener('scroll', animateOnScroll);
 });
+
+//Member Card Hover Effect with shadow box of different color
+memberCards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.boxShadow = '0 4px 20px rgb(78, 212, 241)';
+        card.style.transition = 'box-shadow 0.3s ease-in-out';
+    });
+    
+    card.addEventListener('mouseout', () => {
+        card.style.boxShadow = 'none';
+    });
+});
+// Smooth Scroll for Anchor Links
+const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+smoothScrollLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        const targetId = link.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+            const offsetTop = targetElement.offsetTop;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Back to Top Button
+const backToTopBtn = document.getElementById('back-to-top');
+if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'flex';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+}
