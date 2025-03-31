@@ -1,5 +1,3 @@
-// DOM Elements
-const themeToggle = document.querySelector('.theme-toggle');
 const body = document.querySelector('body');
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
@@ -14,28 +12,6 @@ const memberSearch = document.getElementById('member-search');
 const roleFilter = document.getElementById('role-filter');
 const memberCards = document.querySelectorAll('.member-card');
 const noResults = document.getElementById('no-results');
-
-// Theme Toggle
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        
-        if (body.classList.contains('dark-mode')) {
-            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-            localStorage.setItem('theme', 'dark');
-        } else {
-            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-            localStorage.setItem('theme', 'light');
-        }
-    });
-    
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        body.classList.add('dark-mode');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    }
-}
 
 // Mobile Menu Toggle
 if (menuToggle) {
