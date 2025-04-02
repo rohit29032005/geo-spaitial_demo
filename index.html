@@ -3,32 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geospatial Club at VIT explores Geographic Information Systems and spatial data analysis through workshops, projects, and events.">
+    <meta name="keywords" content="GIS, geospatial, geographic information systems, VIT, spatial data, mapping">
+    <meta name="author" content="Geospatial Club VIT">
+    <meta name="theme-color" content="#4a8eda">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://geospatialclub.vit.ac.in/">
+    <meta property="og:title" content="Geospatial Club VIT - Home">
+    <meta property="og:description" content="Exploring Geographic Information Systems and spatial data analysis through workshops, projects, and events.">
+    <meta property="og:image" content="https://geospatialclub.vit.ac.in/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://geospatialclub.vit.ac.in/">
+    <meta property="twitter:title" content="Geospatial Club VIT - Home">
+    <meta property="twitter:description" content="Exploring Geographic Information Systems and spatial data analysis through workshops, projects, and events.">
+    <meta property="twitter:image" content="https://geospatialclub.vit.ac.in/images/logo.png">
+    
     <title>Geospatial Club VIT - Home</title>
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
+    
+    <!-- Main Script (deferred for performance) -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="Geospatial Club Logo">
-                <h1>Geospatial Club VIT</h1>
+                <img src="images/logo.png" alt="Geospatial Club Logo" class="animate-fade-in">
+                <h1 class="animate-fade-in">Geospatial Club VIT</h1>
             </div>
-            <nav>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+            <div class="header-right">
+                <div class="dropdown">
+                    <div class="dropdown-toggle">
+                        Menu <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item active">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        <a href="about.html" class="dropdown-item">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </a>
+                        <a href="members.html" class="dropdown-item">
+                            <i class="fas fa-users"></i> Members
+                        </a>
+                        <a href="events.html" class="dropdown-item">
+                            <i class="fas fa-calendar-alt"></i> Events
+                        </a>
+                        <a href="blog.html" class="dropdown-item">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                        <a href="contact.html" class="dropdown-item">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="members.html">Members</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            </div>
         </div>
     </header>
 
@@ -54,7 +101,7 @@
                     <p>At the Geospatial Club, we explore GIS applications in environmental science, urban planning, disaster management, and more.</p>
                 </div>
                 <div class="intro-image">
-                    <img src="images/gis-illustration.png" alt="GIS Illustration">
+                    <img src="images/gis-illustration.png" alt="GIS Illustration" class="animate-float" loading="lazy">
                 </div>
             </div>
         </div>
@@ -67,25 +114,25 @@
                 <div class="underline"></div>
             </div>
             <div class="links-container">
-                <div class="link-card">
+                <div class="link-card hover-lift">
                     <i class="fas fa-users"></i>
                     <h3>About Us</h3>
                     <p>Learn about our mission, vision, and the team behind the Geospatial Club.</p>
                     <a href="about.html" class="btn-small">View More</a>
                 </div>
-                <div class="link-card">
+                <div class="link-card hover-lift">
                     <i class="fas fa-calendar-alt"></i>
                     <h3>Events</h3>
                     <p>Discover our upcoming workshops, hackathons, and guest lectures.</p>
                     <a href="events.html" class="btn-small">View More</a>
                 </div>
-                <div class="link-card">
+                <div class="link-card hover-lift">
                     <i class="fas fa-blog"></i>
                     <h3>Blog</h3>
                     <p>Read articles, tutorials, and project showcases from our members.</p>
                     <a href="blog.html" class="btn-small">View More</a>
                 </div>
-                <div class="link-card">
+                <div class="link-card hover-lift">
                     <i class="fas fa-id-card"></i>
                     <h3>Members</h3>
                     <p>Meet the passionate individuals who make up our geospatial community.</p>
@@ -112,7 +159,7 @@
                 <div class="underline"></div>
             </div>
             <div class="events-preview">
-                <div class="event-card">
+                <div class="event-card hover-lift hover-glow">
                     <div class="event-date">
                         <span class="day">15</span>
                         <span class="month">Apr</span>
@@ -124,7 +171,7 @@
                         <a href="events.html" class="btn-small">Register</a>
                     </div>
                 </div>
-                <div class="event-card">
+                <div class="event-card hover-lift hover-glow">
                     <div class="event-date">
                         <span class="day">22</span>
                         <span class="month">Apr</span>
@@ -136,7 +183,7 @@
                         <a href="events.html" class="btn-small">Register</a>
                     </div>
                 </div>
-                <div class="event-card">
+                <div class="event-card hover-lift hover-glow">
                     <div class="event-date">
                         <span class="day">29</span>
                         <span class="month">Apr</span>
@@ -162,9 +209,9 @@
                 <div class="underline"></div>
             </div>
             <div class="blog-preview">
-                <div class="blog-card">
+                <div class="blog-card hover-lift hover-glow">
                     <div class="blog-image">
-                        <img src="images/blog1.jpg" alt="Blog Post Image">
+                        <img src="images/blog1.jpg" alt="Blog Post Image" loading="lazy">
                     </div>
                     <div class="blog-content">
                         <h3>Understanding Spatial Analysis Techniques</h3>
@@ -173,9 +220,9 @@
                         <a href="blog.html" class="btn-small">Read More</a>
                     </div>
                 </div>
-                <div class="blog-card">
+                <div class="blog-card hover-lift hover-glow">
                     <div class="blog-image">
-                        <img src="images/blog2.jpg" alt="Blog Post Image">
+                        <img src="images/blog2.jpg" alt="Blog Post Image" loading="lazy">
                     </div>
                     <div class="blog-content">
                         <h3>Creating Your First Web Map with Leaflet.js</h3>
@@ -184,9 +231,9 @@
                         <a href="blog.html" class="btn-small">Read More</a>
                     </div>
                 </div>
-                <div class="blog-card">
+                <div class="blog-card hover-lift hover-glow">
                     <div class="blog-image">
-                        <img src="images/blog3.jpg" alt="Blog Post Image">
+                        <img src="images/blog3.jpg" alt="Blog Post Image" loading="lazy">
                     </div>
                     <div class="blog-content">
                         <h3>GIS Applications in Urban Planning</h3>
@@ -202,7 +249,6 @@
         </div>
     </section>
 
-
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -210,17 +256,6 @@
                     <img src="images/logo.png" alt="Geospatial Club Logo">
                     <h3>Geospatial Club VIT</h3>
                     <p>Exploring the world through GIS</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
                 </div>
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
@@ -231,24 +266,23 @@
                 <div class="footer-social">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Facebook" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter" title="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn" title="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="GitHub" title="View our projects on GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Geospatial Club VIT. All rights reserved.</p>
+                <p>&copy; 2025 Geospatial Club VIT. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <a href="#" id="back-to-top" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <script src="script.js"></script>
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 </body>
 </html>
