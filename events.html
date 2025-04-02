@@ -11,22 +11,36 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="Geospatial Club Logo">
-                <h1>Geospatial Club VIT</h1>
+                <img src="images/logo.png" alt="Geospatial Club Logo" class="animate-fade-in">
+                <h1 class="animate-fade-in delay-300">Geospatial Club VIT</h1>
             </div>
-            <nav>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
+            <div class="header-right">
+                <div class="dropdown">
+                    <div class="dropdown-toggle">
+                        Menu <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="index.html" class="dropdown-item">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        <a href="about.html" class="dropdown-item">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </a>
+                        <a href="members.html" class="dropdown-item">
+                            <i class="fas fa-users"></i> Members
+                        </a>
+                        <a href="events.html" class="dropdown-item active">
+                            <i class="fas fa-calendar-alt"></i> Events
+                        </a>
+                        <a href="blog.html" class="dropdown-item">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                        <a href="contact.html" class="dropdown-item">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="members.html">Members</a></li>
-                    <li><a href="events.html" class="active">Events</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            </div>
         </div>
     </header>
 
@@ -250,17 +264,6 @@
                     <h3>Geospatial Club VIT</h3>
                     <p>Exploring the world through GIS</p>
                 </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="members.html">Members</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
                     <p><i class="fas fa-envelope"></i> geospatialclub@vit.ac.in</p>
@@ -279,10 +282,15 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Geospatial Club VIT. All rights reserved.</p>
+                <p>&copy; 2025 Geospatial Club VIT. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
