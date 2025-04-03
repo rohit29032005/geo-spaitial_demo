@@ -990,12 +990,12 @@ header .container {
     background-color: var(--bg-light);
     border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 255, 0.5); /* Added blue box shadow */
     transition: transform var(--transition-normal);
 }
 
 .member-card:hover {
-    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 255, 0.5);
+    transform: scale(1.2);
 }
 
 .member-image {
